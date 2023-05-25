@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sederhana</title>
+</head>
+<body>
+  <h1>Kalkulator Sederhana</h1>
+  <script>
+    // Meminta input angka pertama
+    var angka1 = prompt("Masukkan angka pertama:");
+
+    // Meminta input angka kedua
+    var angka2 = prompt("Masukkan angka kedua:");
+
+    // Mengonversi input menjadi bilangan bulat
+    angka1 = parseFloat(angka1);
+    angka2 = parseFloat(angka2);
+
+    // Meminta input operasi
+    var operasi = prompt("Masukkan operasi (+, -, *, /):");
+
+    // Inisialisasi variabel hasil
+    var hasil;
+
+    // Melakukan perhitungan berdasarkan operasi yang dipilih
+    if (operasi === "+") {
+      hasil = angka1 + angka2;
+    } else if (operasi === "-") {
+      hasil = angka1 - angka2;
+    } else if (operasi === "*") {
+      hasil = angka1 * angka2;
+    } else if (operasi === "/") {
+      hasil = angka1 / angka2;
+    } else {
+      hasil = "Operasi tidak valid!";
+    }
+
+    // Menampilkan hasil perhitungan
+    document.write("<p>Hasil: " + hasil + "</p>");
+  </script>
+</body>
+</html>
